@@ -107,23 +107,3 @@ async function getContent(){
 getContent();
 
 */
-
-
-              // INICIO CHAMADA AJAX
-              var request = $.ajax({
-                  url: "https://www.momentodiabetes.com.br/wp-json/wp/v2/posts",
-              })
-              request.done(function (dados) {            
-
-                  console.log("%c VERIFICAÇÃO DE DISPONIBILIDADE DE API","background:#ff0000;color:#fff;");
-                  console.log(dados);
-
-                
-              });
-              request.fail(function (dados) {
-                     
-                   console.log("API NÃO DISPONÍVEL");
-                   console.log(dados);
-
-              });
-              // FINAL CHAMADA AJAX
